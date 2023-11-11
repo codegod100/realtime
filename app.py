@@ -2,9 +2,10 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, emit
 import requests
 from pprint import pprint
+import os
 
 app = Flask(__name__)
-app.config["SECRET_KEY"] = "secret"
+app.config["SECRET_KEY"] = os.environ.get("SECRET_KEY")
 socketio = SocketIO(app)
 
 

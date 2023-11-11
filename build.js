@@ -14,4 +14,20 @@ async function watch() {
     await ctx.watch();
     console.log("watching")
 }
-watch()
+
+
+function build() {
+    esbuild
+        .build({
+            entryPoints: ['components/index.js'], // replace with your entry file
+            mainFields: ["svelte", "browser", "module", "main"],
+            conditions: ["svelte", "browser"],
+            bundle: true,
+            outfile: 'static/bundle.js', // replace with your output file
+            plugins: [sveltePlugin()],
+            logLevel: 'info',
+        })
+        .catch(() => process.exit(1));
+}
+
+build()
