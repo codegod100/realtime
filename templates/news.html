@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flask WebSocket App</title>
+    <script type="module" src="{{ url_for('static', filename='bundle.js') }}">
+
+    </script>
+
+    <link href="{{ url_for('static', filename='style.css') }}" rel="stylesheet">
+</head>
+
+<body>
+
+    {%for story in stories%}
+    <div>
+        <a class="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
+            href='{{story["url"]}}'>{{story["title"]}}</a>
+    </div>
+    {%endfor%}
+    <div><button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"><a
+                href="/">Back home </a></button></div>
+</body>
+
+</html>

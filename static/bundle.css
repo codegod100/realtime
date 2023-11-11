@@ -1,0 +1,11 @@
+/* fakecss:/home/vera/realtime/components/BigClock.esbuild-svelte-fake-css */
+.clock.svelte-1ycsa7 {
+  font-family: "Digital-7 Mono";
+  padding: 20px;
+  border-radius: 10px;
+}
+.clock-widget.svelte-1ycsa7 {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}

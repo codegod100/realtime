@@ -1,0 +1,12 @@
+{
+    "scripts": {
+        "build": "npx tailwindcss -i ./src/style.css -o ./static/style.css --watch"
+    },
+    "dependencies": {
+        "emojisplosion": "^2.6.1",
+        "esbuild": "^0.19.5",
+        "esbuild-svelte": "^0.8.0",
+        "socket.io-client": "^4.7.2",
+        "svelte": "^4.2.2"
+    }
+}
