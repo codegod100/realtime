@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+{% include 'header.html' %}
+
+<body>
+
+    <h1 class="text-3xl font-bold underline">Flask WebSocket App</h1>
+    <div>{{text}} [from flask]</div>
+    <div id="api"></div>
+    <div id="input-component"></div>
+
+    <div>Other stuff, don't need no widget</div>
+    <div id="clock"></div>
+    <div><button
+            class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"><a
+                href="/news">News </a></button></div>
+</body>
+
+</html>
+
+<style>
+    body {
+        padding: 10px;
+    }
+
+    div {
+        margin: 10px
+    }
+
+    button {
+        margin-top: 10px
+    }
+</style>

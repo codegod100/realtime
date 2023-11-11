@@ -1,0 +1,1 @@
+Playing around with differnt technologies into a cute app
