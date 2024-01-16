@@ -1,8 +1,9 @@
-# pixi environments
-.pixi
+
 /node_modules
 /__pycache__
 .env
 /static/bundle.css
 /static/style.css
 /static/bundle.js
+/.venv
+/.devbox
