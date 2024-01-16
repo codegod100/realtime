@@ -25,13 +25,13 @@
 
 <div class="clock-widget roll-in">
   <div>
-    Clock made with <button
+    Clock made with  <button
       class="heart"
       on:click={() => {
         emojisplosion({ emojis: ["💖"] });
         audio.play();
       }}>💖</button
-    > in svelte
+    > in <b>svelte</b> using <b>devbox</b>
   </div>
   <div class="clock text-6xl text-center">
     {hours}:{time.getMinutes() < 10
