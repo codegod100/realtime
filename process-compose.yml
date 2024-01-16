@@ -1,0 +1,8 @@
+# Process compose for starting django
+version: "0.5"
+
+processes:
+  flask:
+   command: poetry run flask run --debug --host=0.0.0.0
+   availability:
+    restart: "always"

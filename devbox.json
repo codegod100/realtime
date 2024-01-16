@@ -2,7 +2,7 @@
   "packages": [
     "nodejs@latest",
     "poetry@latest",
-    "python311Packages.flask@latest"
+    "python@3.11"
   ],
   "shell": {
     "init_hook": [
@@ -12,8 +12,8 @@
       "test": [
         "echo \"Error: no test specified\" && exit 1"
       ],
-      "build": "./build.sh",
-      "dev": "poetry run flask run --debug --host=0.0.0.0",
+      "build":  "./build.sh",
+      "dev":    "poetry run flask run --debug --host=0.0.0.0",
       "server": "./build.sh && poetry run flask run --host=0.0.0.0"
     }
   }

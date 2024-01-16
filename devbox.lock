@@ -42,23 +42,24 @@
         }
       }
     },
-    "python311Packages.flask@latest": {
+    "python@3.11": {
       "last_modified": "2023-12-13T22:54:10Z",
-      "resolved": "github:NixOS/nixpkgs/fd04bea4cbf76f86f244b9e2549fca066db8ddff#python311Packages.flask",
+      "plugin_version": "0.0.3",
+      "resolved": "github:NixOS/nixpkgs/fd04bea4cbf76f86f244b9e2549fca066db8ddff#python3",
       "source": "devbox-search",
-      "version": "2.3.3",
+      "version": "3.11.6",
       "systems": {
         "aarch64-darwin": {
-          "store_path": "/nix/store/b00lhzbvskmlxfkcv3p0f2w6ff0ac03r-python3.11-flask-2.3.3"
+          "store_path": "/nix/store/z0nnwdh4p692yvf3qgwgj3bn78w99q6y-python3-3.11.6"
         },
         "aarch64-linux": {
-          "store_path": "/nix/store/vcv0y9p1cbhadqpvyhwnxn401mxmskix-python3.11-flask-2.3.3"
+          "store_path": "/nix/store/v4ln57kzvq6c3q2041xmgig8vyh5nm20-python3-3.11.6"
         },
         "x86_64-darwin": {
-          "store_path": "/nix/store/lgm5z3sydgd2zlwwx4jrxm2r3bgij92y-python3.11-flask-2.3.3"
+          "store_path": "/nix/store/rfqs6lmm832yp3aqihsjdfvvs0wvr1a5-python3-3.11.6"
         },
         "x86_64-linux": {
-          "store_path": "/nix/store/4nzlrl2kg5rzbiqi77ppccak22p61i8a-python3.11-flask-2.3.3"
+          "store_path": "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6"
         }
       }
     }
