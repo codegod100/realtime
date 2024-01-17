@@ -1,6 +1,23 @@
 {
   "lockfile_version": "1",
   "packages": {
+    "bun@latest": {
+      "last_modified": "2024-01-14T03:55:27Z",
+      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#bun",
+      "source": "devbox-search",
+      "version": "1.0.22",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/sxj1xfwn7153a5jr89d497vpxpx684iw-bun-1.0.22"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/d00byhy46iyl1vyxs59xsn1q499i2xlv-bun-1.0.22"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/3zinj1fjyaghpzl0wd3assqr5wsrc44s-bun-1.0.22"
+        }
+      }
+    },
     "nodejs@latest": {
       "last_modified": "2023-12-25T10:13:25Z",
       "resolved": "github:NixOS/nixpkgs/e1fa12d4f6c6fe19ccb59cac54b5b3f25e160870#nodejs_21",
@@ -60,6 +77,26 @@
         },
         "x86_64-linux": {
           "store_path": "/nix/store/5k91mg4qjylxbfvrv748smfh51ppjq0g-python3-3.11.6"
+        }
+      }
+    },
+    "tailwindcss@latest": {
+      "last_modified": "2024-01-14T03:55:27Z",
+      "resolved": "github:NixOS/nixpkgs/dd5621df6dcb90122b50da5ec31c411a0de3e538#tailwindcss",
+      "source": "devbox-search",
+      "version": "3.4.1",
+      "systems": {
+        "aarch64-darwin": {
+          "store_path": "/nix/store/b1p5am7p1sj5hpg29zm0whvix9zcn5sz-tailwindcss-3.4.1"
+        },
+        "aarch64-linux": {
+          "store_path": "/nix/store/aidzr9wqdk54c40ll14ra28ahid7kxml-tailwindcss-3.4.1"
+        },
+        "x86_64-darwin": {
+          "store_path": "/nix/store/w91lrzr8hg36mwikcpshxmm8sidjvpvn-tailwindcss-3.4.1"
+        },
+        "x86_64-linux": {
+          "store_path": "/nix/store/6rxxy5mjjyn38darp57s7jyg8hcx07dx-tailwindcss-3.4.1"
         }
       }
     }

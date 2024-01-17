@@ -1,9 +1,6 @@
 {
   "name": "Devbox Remote Container",
-  "build": {
-    "dockerfile": "./Dockerfile",
-    "context": ".."
-  },
+  "image": "ghcr.io/codegod100/realtime:main",
   "customizations": {
     "vscode": {
       "settings": {},
