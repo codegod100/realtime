@@ -6,4 +6,6 @@
 /static/style.css
 /static/bundle.js
 /.venv
-/.devbox
+/.devbox# pixi environments
+.pixi
+
