@@ -20,9 +20,13 @@ environment:
 pipeline:
   - name: build it
     runs: |
-      WORKDIR=${{targets.destdir}}/workspace/realtime
-      git clone https://github.com/codegod100/realtime.git $WORKDIR
+      export WORKDIR=${{targets.destdir}}/workspace/realtime
+      mkdir -p ${{targets.destdir}}/workspace
+      cd ..
+      cp -r build tmp
+      mv tmp $WORKDIR
       cd $WORKDIR
+      ls
       bun install
       node build.js
       mkdir -p /usr/local/lib
