@@ -3,3 +3,4 @@ flask == 3.0.1
 python-dotenv
 requests
 watchdog
+python

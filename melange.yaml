@@ -1,0 +1,38 @@
+package:
+  name: realtime
+  version: 0.1.0
+
+environment:
+  contents:
+    keyring:
+      - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
+    repositories:
+      - https://packages.wolfi.dev/os
+    packages:
+      - wolfi-base
+      - git
+      - bun
+      - py3-virtualenv
+      - py3-pip
+      - nodejs
+      - pixi
+      - posix-libc-utils
+pipeline:
+  - name: build it
+    runs: |
+      WORKDIR=${{targets.destdir}}/workspace/realtime
+      git clone https://github.com/codegod100/realtime.git $WORKDIR
+      cd $WORKDIR
+      bun install
+      node build.js
+      mkdir -p /usr/local/lib
+      npx -y tailwindcss -i ./src/style.css -o ./static/style.css
+      # virtualenv venv
+      # echo "#!/workspace/realtime/venv/bin/python3" > "${WORKDIR}/server"
+      # cat app.py >> "${WORKDIR}/server"
+      # chmod +x "${WORKDIR}/server"
+      
+      # source venv/bin/activate
+      # pip install -r requirements.txt
+      pixi install
+      rm .pixi/prefix
